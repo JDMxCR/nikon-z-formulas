@@ -1,0 +1,112 @@
+{
+  "formulas": [
+    {
+      "Author": "Ritchie Roesch",
+      "Name": "Nostalgic Print",
+      "PictureControl": "Dream",
+      "EffectLevel": 90,
+      "QuickSharp": 0.0,
+      "Sharpening": -0.5,
+      "MidRangeSharpening": -2.0,
+      "Clarity": -4.0,
+      "Contrast": 3.0,
+      "Saturation": -2.0,
+      "ActiveDLighting": "Normal",
+      "HighISONR": "Low",
+      "WhiteBalance": "Natural Light Auto",
+      "WBAdjust": {
+        "Blue": 2.0,
+        "Green": 0.5
+      },
+      "ISO": "up to 3200",
+      "isFavorite": "false",
+      "imgs": [
+        "./51841343053_b3d246af59_c.webp",
+        "./51841312258_ce0b7dbc8b_c.webp",
+        "./51841555569_0061ff76c0_c.webp",
+        "./51841312273_325cc6aa34_c.webp"
+      ]
+    },
+    {
+      "Author": "Ritchie Roesch",
+      "Name": "Silver Slide",
+      "PictureControl": "Dramatic",
+      "EffectLevel": 70,
+      "QuickSharp": 0.0,
+      "Sharpening": 2.0,
+      "MidRangeSharpening": 1.0,
+      "Clarity": 1.0,
+      "Contrast": -1.0,
+      "Saturation": 3.0,
+      "ActiveDLighting": "High",
+      "HighISONR": "Low",
+      "WhiteBalance": "Direct Sunlight",
+      "WBAdjust": {
+        "Amber": 3.0,
+        "Magenta": 1.0
+      },
+      "ISO": "up to 3200",
+      "isFavorite": "false",
+      "imgs": [
+        "./51836944981_14be5ef108_c.webp",
+        "./51837167313_7614ff5765_c.webp",
+        "./51837058033_0e68b31303_c.webp",
+        "./51837303554_efa89228cb_c.webp"
+      ]
+    },
+    {
+      "Author": "Ritchie Roesch",
+      "Name": "Weekend Negative",
+      "PictureControl": "Sunday",
+      "EffectLevel": 60,
+      "QuickSharp": 0.0,
+      "Sharpening": -2.0,
+      "MidRangeSharpening": 0.0,
+      "Clarity": 3.0,
+      "Contrast": 1.0,
+      "Saturation": -3.0,
+      "ActiveDLighting": "Normal",
+      "HighISONR": "Low",
+      "WhiteBalance": "6500K",
+      "WBAdjust": {
+        "Amber": 0.0,
+        "Green": 2.0
+      },
+      "ISO": "up to 3200",
+      "isFavorite": "false",
+      "imgs": [
+        "./51839215178_2751e5d1e0_c.webp",
+        "./51839455094_b66b2f2619_c.webp",
+        "./51840271317_55e5cdedf7_c.webp",
+        "./51839839565_71a12274a6_c.webp"
+      ]
+    },
+    {
+      "Author": "Ritchie Roesch",
+      "Name": "Tungsten Dawn",
+      "PictureControl": "Morning",
+      "EffectLevel": 70,
+      "QuickSharp": 0.0,
+      "Sharpening": -2.0,
+      "MidRangeSharpening": 2.0,
+      "Clarity": -2.0,
+      "Contrast": 1.0,
+      "Saturation": 2.0,
+      "ActiveDLighting": "High",
+      "HighISONR": "Low",
+      "WhiteBalance": "Day White Fluorescent",
+      "WBAdjust": {
+        "Amber": 2.0,
+        "Magenta": 1.0
+      },
+      "ISO": "up to 3200",
+      "isFavorite": "false",
+      "imgs": [
+        "./51842050969_fa0ba97f8f_c.webp",
+        "./51840747352_23d736aff1_c.webp",
+        "./51842424765_2f2b702158_c.webp",
+        "./51843650115_e1aec9ebbf_c.webp"
+      ]
+    }
+  ]
+}
