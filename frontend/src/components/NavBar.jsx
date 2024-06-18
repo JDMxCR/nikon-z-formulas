@@ -1,6 +1,5 @@
 import { SiNikon } from "react-icons/si";
 import { BiSolidUserCircle } from "react-icons/bi";
-import "../global.css";
 const NavBar = () => {
   return (
     <nav className="flex justify-between items-center px-10 py-5 text-2xl font-medium text-white bg-gradient-to-br from-yellow-300 to-yellow-500 min-w-80">
