@@ -30,52 +30,74 @@ const Formula = () => {
   };
 
   return (
-    <div className="flex flex-col flex-wrap items-center justify-between py-10 min-w-72 sm:px-10 ">
+    <div className="flex flex-col flex-wrap justify-between items-center py-10 min-w-72 sm:px-10">
       {db.formulas.map((formula, index) => (
         <ul
           key={index}
-          className="relative p-10 m-1 my-5 font-semibold text-gray-200 bg-gray-800 border-2 rounded-lg size-4/5"
+          className="relative p-10 m-1 my-5 font-semibold text-gray-200 bg-gray-800 rounded-lg border-2 size-4/5"
         >
-          <li className="text-xl font-black text-center">{formula.Name}</li>
-          <li>{"Author: " + formula.Author}</li>
-          <li>{"Picture Profile: " + formula.PictureControl}</li>
-          <li>Effect Level:{valueOutput(formula.EffectLevel)}</li>
-          <li>Quick Sharp:{valueOutput(formula.QuickSharp)}</li>
-          <li>Sharpening:{valueOutput(formula.Sharpening)}</li>
-          <li>
-            Mid-Range Sharpening:{valueOutput(formula.MidRangeSharpening)}
+          <li className="pb-2 text-2xl font-black text-center">
+            {formula.Name}
           </li>
-          <li>Clarity:{valueOutput(formula.Clarity)}</li>
-          <li>Contrast: {valueOutput(formula.Contrast)}</li>
-          <li>Saturation: {valueOutput(formula.Saturation)}</li>
-          <li>Active D-Lighting:{valueOutput(formula.ActiveDLighting)}</li>
-          <li>High ISO NR:{valueOutput(formula.HighISONR)}</li>
-          <li>White Balnce:{valueOutput(formula.WhiteBalance)}</li>
-          <li>
-            WB Ajust:
-            {formula.WBAdjust.Blue
-              ? " Blue: " + formula.WBAdjust.Blue
-              : " Amber: " + formula.WBAdjust.Amber}
-            {formula.WBAdjust.Green
-              ? " Green: " + formula.WBAdjust.Green
-              : " Magenta: " + formula.WBAdjust.Magenta}
-          </li>
+          <hr />
+          <div className="text-center">
+            <li>{"Author: " + formula.Author}</li>
+            <hr />
+            <li>{"Picture Profile: " + formula.PictureControl}</li>
+            <hr />
+            <li>Effect Level:{valueOutput(formula.EffectLevel)}</li>
+            <hr />
 
-          <li>ISO:{" " + formula.ISO}</li>
-          <button
-            onClick={() => favoriteHandle(index)}
-            className="absolute size-10 right-6 top-6"
-          >
-            {formulas[index].isFavorite ? (
-              <AiOutlineHeart className="m-auto size-6 fill-yellow-500" />
-            ) : (
-              <AiFillHeart className="m-auto size-6 fill-yellow-500" />
-            )}
-          </button>
-          <div className="flex flex-wrap object-contain py-10 justify-evenly">
+            <li>Quick Sharp:{valueOutput(formula.QuickSharp)}</li>
+            <hr />
+
+            <li>Sharpening:{valueOutput(formula.Sharpening)}</li>
+            <hr />
+            <li>
+              Mid-Range Sharpening:{valueOutput(formula.MidRangeSharpening)}
+            </li>
+            <hr />
+            <li>Clarity:{valueOutput(formula.Clarity)}</li>
+            <hr />
+            <li>Contrast: {valueOutput(formula.Contrast)}</li>
+            <hr />
+            <li>Saturation: {valueOutput(formula.Saturation)}</li>
+            <hr />
+            <li>Active D-Lighting:{valueOutput(formula.ActiveDLighting)}</li>
+            <hr />
+            <li>High ISO NR:{valueOutput(formula.HighISONR)}</li>
+            <hr />
+            <li>White Balnce:{valueOutput(formula.WhiteBalance)}</li>
+            <hr />
+            <li>
+              WB Ajust:
+              {formula.WBAdjust.Blue
+                ? " Blue: " + formula.WBAdjust.Blue
+                : " Amber: " + formula.WBAdjust.Amber}
+              {formula.WBAdjust.Green
+                ? " Green: " + formula.WBAdjust.Green
+                : " Magenta: " + formula.WBAdjust.Magenta}
+            </li>
+
+            <hr />
+            <li>ISO:{" " + formula.ISO}</li>
+            <hr />
+
+            <button
+              onClick={() => favoriteHandle(index)}
+              className="absolute top-6 right-6 size-10"
+            >
+              {formulas[index].isFavorite ? (
+                <AiOutlineHeart className="m-auto size-6 fill-yellow-500" />
+              ) : (
+                <AiFillHeart className="m-auto size-6 fill-yellow-500" />
+              )}
+            </button>
+          </div>
+          <div className="flex object-contain flex-wrap justify-evenly py-10">
             {formula.imgs.map((url, urlIndex) => (
               <img
-                className="object-contain max-w-xs p-2 py-2 m-2 md:max-w-lg bg-slate-50"
+                className="object-contain p-2 py-2 m-2 max-w-xs md:max-w-lg bg-slate-50"
                 src={url}
                 key={urlIndex}
               />
