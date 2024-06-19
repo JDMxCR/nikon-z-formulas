@@ -2,12 +2,12 @@ const Footer = () => {
   return (
     <div className="px-20 py-10 text-gray-200 bg-gray-800">
       <p className="text-xs">
-        Disclaimer: This website and its content are provided "as it is" and are
-        not affiliated, associated, authorized, endorsed by, or in any way
-        officially connected with any other company, agency or government
-        entity. All trademarks and copyrights are the property of their
-        respective owners. Other company and product names mentioned herein may
-        be the trademarks of their respective owners.
+        Disclaimer: This website and its content are provided &quot;as it
+        is&quot; and are not affiliated, associated, authorized, endorsed by, or
+        in any way officially connected with any other company, agency or
+        government entity. All trademarks and copyrights are the property of
+        their respective owners. Other company and product names mentioned
+        herein may be the trademarks of their respective owners.
       </p>
     </div>
   );

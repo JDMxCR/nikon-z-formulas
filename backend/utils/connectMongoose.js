@@ -12,7 +12,7 @@ async function connectMongoose() {
     ).map((el) => el.name);
     console.log(
       "connected to db: ",
-      mongoose.connection.db.dbName,
+      mongoose.connection.db.databaseName,
       collections
     );
     return true;

@@ -3,12 +3,12 @@ import db from "../../db.json";
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiFillHeart } from "react-icons/ai";
 
-const Formulas = db.formulas;
+const Formulas = db.Formulas;
 
 const Formula = () => {
   const [formulas, setFormulas] = useState(() => {
     const localData = localStorage.getItem("formulas");
-    return localData ? JSON.parse(localData) : JSON.parse(Formulas);
+    return localData ? localData : Formulas;
   });
 
   useEffect(() => {
