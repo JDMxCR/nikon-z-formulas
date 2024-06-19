@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
-import db from "../../db.json";
+import db from "../db.json";
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiFillHeart } from "react-icons/ai";
 
-const Formulas = db.Formulas;
-
 const Formula = () => {
+  const Formulas = db.formulas;
   const [formulas, setFormulas] = useState(() => {
     const localData = localStorage.getItem("formulas");
-    return localData ? localData : Formulas;
+    return localData ? JSON.parse(localData) : Formulas;
   });
 
   useEffect(() => {
@@ -31,7 +30,7 @@ const Formula = () => {
 
   return (
     <div className="flex flex-col flex-wrap justify-between items-center py-10 min-w-72 sm:px-10">
-      {db.formulas.map((formula, index) => (
+      {Formulas.map((formula, index) => (
         <ul
           key={index}
           className="relative p-10 m-1 my-5 font-semibold text-gray-200 bg-gray-800 rounded-lg border-2 size-4/5"
@@ -67,7 +66,7 @@ const Formula = () => {
             <hr />
             <li>High ISO NR:{valueOutput(formula.HighISONR)}</li>
             <hr />
-            <li>White Balnce:{valueOutput(formula.WhiteBalance)}</li>
+            <li>White Balance:{valueOutput(formula.WhiteBalance)}</li>
             <hr />
             <li>
               WB Ajust:
@@ -87,7 +86,7 @@ const Formula = () => {
               onClick={() => favoriteHandle(index)}
               className="absolute top-6 right-6 size-10"
             >
-              {formulas[index].isFavorite ? (
+              {Formulas[index].isFavorite ? (
                 <AiOutlineHeart className="m-auto size-6 fill-yellow-500" />
               ) : (
                 <AiFillHeart className="m-auto size-6 fill-yellow-500" />
@@ -95,11 +94,11 @@ const Formula = () => {
             </button>
           </div>
           <div className="flex object-contain flex-wrap justify-evenly py-10">
-            {formula.imgs.map((url, urlIndex) => (
+            {formula.imgs.map((url, index) => (
               <img
                 className="object-contain p-2 py-2 m-2 max-w-xs md:max-w-lg bg-slate-50"
                 src={url}
-                key={urlIndex}
+                key={index}
               />
             ))}
           </div>
