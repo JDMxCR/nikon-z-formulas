@@ -7,7 +7,11 @@ const NavBar = () => {
         <SiNikon className="sm:size-16 size-10" />
       </div>
       <div>
-        <h1 className="sm:text-5xl dm-mono-medium">Z formulas</h1>
+        <img
+          className="h-20"
+          src=".\src\assets\logo-w.png"
+          alt="z formulas logo"
+        />
       </div>
       <div>
         <BiSolidUserCircle className="sm:size-8 rise-shake" />
