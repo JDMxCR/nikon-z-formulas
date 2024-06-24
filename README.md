@@ -26,6 +26,6 @@ Nikon Z Formulas is your ultimate creative hub, designed for the passionate phot
 
 Ready to transform your photography? Visit our website and start your journey today!
 
-[Nikon Z Formulas](www.nikonzformulas.com)
+[Nikon Z Formulas](https://www.nikonzformulas.com)
 
 Let’s capture the extraordinary, together. 🌟📷
