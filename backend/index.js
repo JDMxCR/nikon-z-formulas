@@ -8,7 +8,7 @@ const port = 8080;
 const mongooseConnected = await connectMongoose();
 
 app.get("/", (req, res) => {
-  res.send("Hello World!, server works");
+  res.send("<h1>Status 200</h1>This server is active");
 });
 
 app.listen(port, () => {

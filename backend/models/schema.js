@@ -1,4 +1,3 @@
-import e from "express";
 import mongoose from "mongoose";
 
 const User = mongoose.model(
@@ -112,3 +111,5 @@ const UserData = mongoose.model(
     ],
   })
 );
+
+export default User;

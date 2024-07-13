@@ -3,9 +3,7 @@ import "dotenv/config";
 
 async function connectMongoose() {
   try {
-    await mongoose.connect(
-      process.env.MONGO_DB || "mongodb://127.0.0.1:27017/test"
-    );
+    await mongoose.connect(process.env.MONGO_DB || "mongodb://localhost/test");
 
     const collections = (
       await mongoose.connection.db.listCollections().toArray()
