@@ -4,11 +4,11 @@ import MainPage from "./pages/MainPage";
 
 function App() {
   return (
-    <>
+    <div className="bg-neutral-900">
       <NavBar />
       <MainPage />
       <Footer />
-    </>
+    </div>
   );
 }
 

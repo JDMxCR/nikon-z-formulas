@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="px-20 py-10 text-gray-200 bg-gray-800">
+    <div className="px-20 py-10 text-neutral-200 bg-neutral-800">
       <p className="text-xs">
         Disclaimer: This website and its content are provided &quot;as it
         is&quot; and are not affiliated, associated, authorized, endorsed by, or

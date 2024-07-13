@@ -17,11 +17,11 @@ export const Table = ({ formula }) => {
 
   const tableRow = (name, value) => {
     return (
-      <tr>
-        <td className="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
+      <tr className="bg-neutral-800">
+        <td className="px-4 py-3 font-medium whitespace-nowrap text-neutral-200">
           {name}:
         </td>
-        <td className="px-4 py-2 text-gray-700 whitespace-nowrap">
+        <td className="px-4 py-2 whitespace-nowrap text-neutral-200">
           {value > 0 ? "+" + value : value}
         </td>
       </tr>
@@ -30,20 +30,20 @@ export const Table = ({ formula }) => {
 
   return (
     <>
-      <div className="overflow-x-auto m-10 text-center rounded-xl border border-gray-200 shadow-xl">
-        <table className="min-w-full text-sm bg-white divide-y-2 divide-gray-200">
-          <thead className="bg-gray-800 ltr:text-left rtl:text-right">
+      <div className="overflow-x-auto mx-20 mt-20 mb-40 text-center rounded-xl border-2 shadow-xl border-neutral-200">
+        <table className="min-w-full text-sm divide-y-2 bg-neutral-800 divide-neutral-500">
+          <thead className="bg-neutral-800 ltr:text-left rtl:text-right">
             <tr>
               <th
                 colSpan={2}
-                className="px-4 py-2 text-2xl font-black text-yellow-400 whitespace-nowrap"
+                className="p-4 text-2xl font-black text-yellow-400 whitespace-nowrap"
               >
                 {formula.Name}
               </th>
             </tr>
           </thead>
 
-          <tbody className="divide-y divide-gray-200">
+          <tbody className="divide-y divide-neutral-500">
             {tableRow("Author", formula.Author)}
 
             {tableRow("Picture Control", formula.PictureControl)}
@@ -71,16 +71,19 @@ export const Table = ({ formula }) => {
             {/* {tableRow("WB Adjust", formula.WBAdjust)} */}
             {
               <tr>
-                <td className="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
+                <td className="px-4 py-3 font-medium whitespace-nowrap text-neutral-200">
                   WB Adjust:
                 </td>
-                <td className="px-4 py-2 text-gray-700 whitespace-nowrap">
+                <td className="px-4 py-3 whitespace-nowrap text-neutral-200">
                   {wbAjust(formula.WBAdjust.Blue, formula.WBAdjust.Green)}
                 </td>
               </tr>
             }
             <tr>
-              <td colSpan={2}>
+              <td
+                colSpan={2}
+                className="px-4 py-3 font-medium whitespace-nowrap text-neutral-200"
+              >
                 Images:
                 <div className="flex object-contain flex-wrap justify-evenly py-10">
                   {formula.imgs?.map((url, index) => (
