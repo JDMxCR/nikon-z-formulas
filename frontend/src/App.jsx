@@ -1,15 +1,15 @@
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
-import MainPage from "./pages/MainPage";
+import ShowFormulas from "./pages/ShowFormulas";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
-function App() {
+export default function App() {
   return (
     <div className="bg-neutral-900">
       <NavBar />
-      <MainPage />
+      <ShowFormulas />
       <Footer />
+      <SpeedInsights />
     </div>
   );
 }
-
-export default App;
